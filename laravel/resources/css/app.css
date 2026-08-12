@@ -1,3 +1,10 @@
+/*Importamos los iconos de esta forma para tomar google icons */
+@import './icons.css';
+/*Importamos los iconos de esta forma para tomar google fonts */
+body{
+    font-family: "Roboto", sans-serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

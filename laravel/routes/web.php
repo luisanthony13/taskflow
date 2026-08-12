@@ -14,8 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $message_welcome = [
+        [   
+            'message_1' => 'Bienvenidos al Traductor',
+        ],
+        [   
+            'message_1' => 'de Kichwa Amazónico a Español',
+        ],
+        [   
+            'message_1' => 'Versión 1.0',
+        ]
+    ];
+
+    return view('welcome', compact('message_welcome'));
 });
+
 Route::get('/about', function () {
     return view('about');
 });
