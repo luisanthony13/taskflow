@@ -10,8 +10,6 @@ use Illuminate\Support\Facades\Route;
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', function () {
     $message_welcome = [
@@ -32,3 +30,11 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/calendar', function () {
+    return view('calendar');
+});
+
+*/
+
+
+

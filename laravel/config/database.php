@@ -107,6 +107,7 @@ return [
     */
 
     'migrations' => 'migrations',
+    //La tabla migrations está dentro del esquema Public.
 
     /*
     |--------------------------------------------------------------------------

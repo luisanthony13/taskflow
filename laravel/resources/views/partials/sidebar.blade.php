@@ -5,8 +5,11 @@
         <a href="" class="flex items-center gap-2.5 min-w-0">
             <div class="w-8 h-8 rounded-full bg-white overflow-hidden flex-shrink-0 flex items-center justify-center"
                 style="border:0px solid #e4f0e9; box-shadow:0 1px 4px rgba(0,30,15,0.08);">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRINWK8aAEVsllX5dd1AWtOEe9e8ARniPlOLFfgNtXQrA&s=10"
-                    alt="Logo" class="w-full h-full object-contain">
+                
+                <a href="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRINWK8aAEVsllX5dd1AWtOEe9e8ARniPlOLFfgNtXQrA&s=10"
+                    alt="Logo" class="w-full h-full object-contain"></a>
+                
+
             </div>
             <div class="flex items-baseline gap-1.5 min-w-0">
                 <span class="text-md font-bold tracking-tight" style="color:#ffffff;font-size:19px">El Amauta</span>
