@@ -8,10 +8,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Task extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
     protected $table = 'task';
     protected $primaryKey = 'id';
     protected $fillable = ['category_id', 'user_id', 'title', 'description', 'status'];
+
+    //Se debe mencionar que tanto category_id y user_id son de tipo numéricos.
+    protected $casts = [
+        'category_id' =>'integer',
+        'user_id' =>'integer',
+    ];
 
     public function category()
     {

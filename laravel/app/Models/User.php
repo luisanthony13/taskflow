@@ -14,4 +14,14 @@ class User extends Authenticatable
     protected $primaryKey = 'id';
     protected $fillable = ['user_name', 'password'];
     protected $hidden = ['password'];
+
+    //Creamos un casts para que el password se hashee automaticamente.
+    protected $casts = [
+        'password' => 'hashed',
+    ];
+    //Hacemos un hasMany para decir que un usuario puede tener varias tareas. 
+    protected function task(){
+        return $this->hasMany(Task::class, 'user_id ');
+    }
 }
+
